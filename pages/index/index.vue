@@ -95,9 +95,6 @@
           <img src="https://prod-cr-cloud-hcres.oss-cn-shenzhen.aliyuncs.com/pcp/picture/appconfig/557eb9b7186e4ee3b88b253fed631be1.jpg" alt="">
         </span>
       </div>
-      {{
-        $store.state.todo.list
-      }}
     </div>
   </div>
 </template>

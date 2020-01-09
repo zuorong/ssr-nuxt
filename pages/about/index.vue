@@ -5,6 +5,13 @@
     </a>
     <div class="article">
       xx是国内领先的互联网医院服务平台，为患者提供就医全流程服务，院外全方位康复护理服务。提供智能导诊、预约挂号、在线缴费、在线问诊、住院服务和健康管理等涵盖诊前、诊中和诊后、线上线下一体化的一站式健康 医疗服务。与全国近400家医院系统实现联通，平台拥有超过1万名三甲注册医生，致力于成为中国互联网医疗服务体系中最受患者信任的服务商。
+      <ul>
+        <li v-for="item in result" :key="item.id">
+          {{
+            item.user
+          }}
+        </li>
+      </ul>
     </div>
     <div class="footer">
       <div>
@@ -31,10 +38,9 @@ export default {
     }
   },
   async asyncData ({ req, $axios }) {
-    // console.log(await homeService.getMoney($axios, {}))
-    console.log(await homeService.getToken($axios, { user: 'steven', age: 56 }))
+    const res = await homeService.getToken($axios, { user: 'steven', age: 56 })
     return {
-      result: []
+      result: res
     }
   }
 }
