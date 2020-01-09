@@ -1,0 +1,17 @@
+body,html{width:100%;-webkit-tap-highlight-color:transparent;-webkit-overflow-scrolling:touch}body{font-size:12px;color:#333;font-family:Helvetica Neue,Helvetica,STHeiTi,sans-serif}body,figure,form,h1,h2,h3,h4,h5,h6,p,table,textarea,ul{margin:0;padding:0}textarea{resize:none}ul{list-style:none}img{display:block}em,i,var{font-style:normal}button,input,textarea{display:block;outline:none;border:none;background:none}a,button,input,textarea{-webkit-tap-highlight-color:transparent}a{color:#333}a,a:hover{text-decoration:none}
+body{
+  background: #fff;
+}
+/* .page-enter-active, .page-leave-active {
+  transition: opacity .1s linear, transform 0.5s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+  transform: translateX(-100px);
+} */
+.page-enter-active, .page-leave-active {
+  transition: opacity .1s ease-in;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
